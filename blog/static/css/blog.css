@@ -1,0 +1,81 @@
+
+* {
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+html {
+    height: 100%;
+  margin: 5px;
+
+}
+
+h1 {
+    border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+
+.date,
+.info {
+    color: grey;
+}
+
+.comment:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+#content,
+#sidebar {
+  display: inline-block;
+  float: left;
+  padding: 20px;
+  height: 100%;
+}
+
+#content {
+    width: 70%;
+    display: flow;
+    grid-template-rows: 85px auto 25px;
+    padding: 8px;
+    background-color: rgb(242,242,247);
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.posts .postcard {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    gap: 8px
+}
+.posts .postcard * {
+    margin: 0;
+    padding: 0;
+}
+
+.posts .postcard h2 a {
+    text-decoration: none;
+}
+
+.posts .postcard  p.date {
+    color: #888;
+    font-size: 14px
+}
+.posts .postcard p:last-child{
+    margin-top: 8px;
+}
+
+#sidebar {
+    width: 30%;
+  background-color: lightblue;
+}
